@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DireccionViewController">
+            <connections>
+                <outlet property="lblDireccion" destination="5v7-8l-x5D" id="OA7-Wh-eQL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirma tu ubicación" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAK-7e-TDc">
+                    <rect key="frame" x="20" y="14" width="315" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="RxF-83-fBh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QrE-81-Ayu">
+                    <rect key="frame" x="20" y="40" width="315" height="1"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="t29-ia-44K"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_pin_blue.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lkq-eb-jpA">
+                    <rect key="frame" x="20" y="14" width="15" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAW-Ft-VQm">
+                    <rect key="frame" x="97.5" y="120" width="160" height="30"/>
+                    <color key="backgroundColor" red="0.14832094800000001" green="0.48724902850000001" blue="0.1710669329" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="AyG-VY-SQr"/>
+                        <constraint firstAttribute="height" constant="30" id="DOn-cm-J1z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <state key="normal" title="Confirmar">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="confirmarDireccion:" destination="-1" eventType="touchUpInside" id="xzZ-yW-dfL"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5v7-8l-x5D">
+                    <rect key="frame" x="20" y="45" width="315" height="71"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="Qsl-Oq-b04"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.19792154837802009" green="0.57603048745768259" blue="0.77246672124213189" alpha="0.1425246147260274" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="DAK-7e-TDc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="14" id="2Ht-XY-oo3"/>
+                <constraint firstItem="QrE-81-Ayu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="9bZ-QR-eWV"/>
+                <constraint firstAttribute="trailing" secondItem="DAK-7e-TDc" secondAttribute="trailing" constant="20" id="DvN-Ae-Gop"/>
+                <constraint firstAttribute="trailing" secondItem="5v7-8l-x5D" secondAttribute="trailing" constant="20" id="P5H-Hk-kDZ"/>
+                <constraint firstItem="bAW-Ft-VQm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QJf-d2-Ngu"/>
+                <constraint firstItem="5v7-8l-x5D" firstAttribute="top" secondItem="QrE-81-Ayu" secondAttribute="bottom" constant="4" id="V17-ZS-U1I"/>
+                <constraint firstItem="5v7-8l-x5D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="coc-0o-3zH"/>
+                <constraint firstAttribute="bottom" secondItem="bAW-Ft-VQm" secondAttribute="bottom" constant="10" id="dPL-f7-L31"/>
+                <constraint firstItem="DAK-7e-TDc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="o2r-Sf-rmq"/>
+                <constraint firstItem="QrE-81-Ayu" firstAttribute="top" secondItem="DAK-7e-TDc" secondAttribute="bottom" constant="6" id="qxS-ev-BD9"/>
+                <constraint firstItem="bAW-Ft-VQm" firstAttribute="top" secondItem="5v7-8l-x5D" secondAttribute="bottom" constant="4" id="xBs-rA-vxa"/>
+                <constraint firstAttribute="trailing" secondItem="QrE-81-Ayu" secondAttribute="trailing" constant="20" id="xHZ-od-bfw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.575712143928037"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="IMG_pin_blue.png" width="24" height="32"/>
+    </resources>
+</document>
